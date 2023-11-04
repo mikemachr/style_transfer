@@ -3,7 +3,7 @@ Built using PyTorch and deployed using flask. Containerized.
 
 You can also run directly from source, provided you have all required dependencies.
 
-View [demo](demo.mp4).
+View [demo](https://youtu.be/eQsXuAp_pDc).
 
 To build container use 
 ```bash
