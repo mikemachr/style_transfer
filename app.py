@@ -6,7 +6,7 @@ from io import BytesIO
 
 app = Flask(__name__)
 
-@app.route('/upload', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def upload_page():
     result_image = None
 
@@ -30,7 +30,7 @@ def upload_page():
             image_io.seek(0)
             return send_file(image_io, mimetype='image/jpeg')
 
-    return render_template('upload.html')
+    return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
